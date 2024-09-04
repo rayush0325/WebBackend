@@ -10,4 +10,5 @@ public interface ProductService {
     public GenaralProductDTO getProductById(long id);
     public GenaralProductDTO createProduct(GenaralProductDTO product);
     public ArrayList<GenaralProductDTO> getAllProducts();
+    public GenaralProductDTO deleteProduct(long id);
 }

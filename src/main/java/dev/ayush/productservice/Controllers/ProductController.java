@@ -30,4 +30,8 @@ public class ProductController {
     public ArrayList<GenaralProductDTO> getAllProducts(){
         return productService.getAllProducts();
     }
+    @DeleteMapping("{id}")
+    public GenaralProductDTO deleteProduct(@PathVariable("id") long id){
+        return productService.deleteProduct(id);
+    }
 }
